@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/provider-auth",
+    "description": "Package provider-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ProviderAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "laravel/framework": "^11.0",
+        "symfony/messenger": "^7.0",
+        "vlucas/phpdotenv": "^5.0",
+        "league/commonmark": "^2.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "symfony/phpunit-bridge": "^7.0",
+        "phpstan/phpstan-symfony": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
